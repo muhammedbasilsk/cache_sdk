@@ -87,7 +87,7 @@ release:
 	git add pyproject.toml && \
 	git commit -m "Bump version to $$VERSION" --no-verify && \
 	git tag v$$VERSION && \
-	git push origin main --no-verify && \
+	git push origin master --no-verify && \
 	git push origin v$$VERSION --no-verify && \
 	make build && \
 	make publish && \

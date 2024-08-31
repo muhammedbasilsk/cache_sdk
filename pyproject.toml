@@ -6,7 +6,7 @@ authors = ["Muhammed Basil <muhammedbasilsk@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/muhammedbasilsk/my-cache-sdk"
-documentation = "https://my-cache-sdk.readthedocs.io"
+documentation = "https://github.com/muhammedbasilsk/my-cache-sdk"
 
 [tool.poetry.dependencies]
 python = "^3.10"  # or whatever version you're using
