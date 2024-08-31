@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "my-cache-sdk"
-version = "0.1.2"  # Increment this version number
+version = "0.1.3"  # Increment this version number
 description = "A cache SDK with support for DynamoDB and Redis"
 authors = ["Muhammed Basil <muhammedbasilsk@gmail.com>"]
 license = "MIT"
