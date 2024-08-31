@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "my-cache-sdk"
+version = "0.1.0"  # Increment this version number
+description = "A cache SDK with support for DynamoDB and Redis"
+authors = ["Muhammed Basil <muhammedbasilsk@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/muhammedbasilsk/my-cache-sdk"
+documentation = "https://my-cache-sdk.readthedocs.io"
+
+[tool.poetry.dependencies]
+python = "^3.10"  # or whatever version you're using
+boto3 = "^1.18.0"
+redis = "^4.0.0"
+dependency-injector = "^4.41.0"  # Add this line
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.0"
+pytest-cov = "^4.0.0"  # Update this line
+sphinx = "^4.0.0"
+black = "^22.0.0"
+isort = "^5.0.0"
+moto = "^4.0.0"  # Add this line
+flake8 = "^4.0.1"
+radon = "^5.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry.scripts]
+build-docs = "sphinx.cmd.build:main"
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203, W503"
+exclude = [".git", "__pycache__", "build", "dist"]
